@@ -152,3 +152,63 @@ text-decoration:none;transition:background .2s,color .2s;
 .site-header .header-actions>.mobile-menu>nav .menu-outro{display:none!important}
 @media(max-width:420px){.site-header .header-actions>.mobile-menu>nav>a,
 .site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>summary{font-size:13px!important;min-height:50px!important}}
+
+/* Boutique refinement: retain exact menu width and typography */
+.site-header .header-actions>.mobile-menu>nav{
+ width:300px!important;
+ padding:14px 0!important;
+ background:linear-gradient(145deg,#223b48 0%,#1b303b 100%)!important;
+ border:1px solid rgba(236,225,208,.18)!important;
+ border-top:2px solid #c9ac8c!important;
+ box-shadow:0 24px 55px rgba(5,20,28,.32),0 3px 10px rgba(5,20,28,.12)!important;
+}
+.site-header .header-actions>.mobile-menu>nav>a,
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>summary{
+ position:relative;
+ font-size:13px!important;
+ letter-spacing:.35px!important;
+ border-bottom:1px solid rgba(235,236,230,.065)!important;
+ transition:color .2s ease,background .2s ease!important;
+}
+.site-header .header-actions>.mobile-menu>nav>a::before,
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>summary::before{
+ content:"";position:absolute;left:0;top:12px;bottom:12px;width:2px;
+ background:#c9ac8c;transform:scaleY(0);transform-origin:center;
+ transition:transform .22s ease;
+}
+.site-header .header-actions>.mobile-menu>nav>a:hover::before,
+.site-header .header-actions>.mobile-menu>nav>a:focus-visible::before,
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>summary:hover::before,
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments[open]>summary::before{
+ transform:scaleY(1);
+}
+.site-header .header-actions>.mobile-menu>nav>a:hover,
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>summary:hover{
+ padding-left:25px!important;background:rgba(234,217,194,.06)!important;
+ color:#e8d2b4!important;
+}
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments[open]>summary{
+ color:#e8d2b4!important;background:rgba(234,217,194,.045)!important;
+}
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>.hamburger-submenu{
+ background:rgba(10,26,35,.38)!important;
+ border-top:0!important;border-bottom:1px solid rgba(235,236,230,.08)!important;
+}
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>.hamburger-submenu>a{
+ position:relative;font-size:12px!important;
+}
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>.hamburger-submenu>a::before{
+ content:"";position:absolute;left:26px;top:50%;width:7px;height:1px;
+ background:#bfa68c;opacity:.55;transition:width .2s ease,opacity .2s ease;
+}
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>.hamburger-submenu>a:hover::before{
+ width:10px;opacity:1;
+}
+.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>.hamburger-submenu>a:hover{
+ padding-left:42px!important;background:rgba(234,217,194,.045)!important;
+}
+.site-header .header-actions>.mobile-menu>summary span:nth-child(3){width:16px!important}
+@media(prefers-reduced-motion:reduce){
+ .site-header .header-actions>.mobile-menu>nav>a::before,
+ .site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>summary::before{transition:none}
+}
