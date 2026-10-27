@@ -212,3 +212,5 @@ text-decoration:none;transition:background .2s,color .2s;
  .site-header .header-actions>.mobile-menu>nav>a::before,
  .site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>summary::before{transition:none}
 }
+
+body>.site-header{z-index:99999!important;isolation:isolate}.site-header .header-actions>.mobile-menu>nav{z-index:99999!important;max-height:min(560px,calc(100dvh - 115px))!important;overflow-y:auto!important;overscroll-behavior:contain;scrollbar-width:thin}.site-header .header-actions>.mobile-menu>nav>.hamburger-apartments>.hamburger-submenu>a{padding-top:9px!important;padding-bottom:9px!important}#home-map,#map{position:relative;z-index:0!important}
