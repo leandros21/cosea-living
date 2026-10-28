@@ -248,3 +248,5 @@ body>.site-header{z-index:99999!important;isolation:isolate}.site-header .header
 @media(prefers-reduced-motion:reduce){
  .site-header .header-actions>.mobile-menu>summary>span{transition:none!important}
 }
+
+.site-footer .footer-bottom{position:relative!important;min-height:64px!important;display:flex!important;align-items:center!important;justify-content:flex-start!important}.site-footer .footer-bottom .footer-credit{position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;text-align:center!important;white-space:nowrap!important;font-size:11px!important;letter-spacing:.2px!important}@media(max-width:600px){.site-footer .footer-bottom{flex-direction:column!important;justify-content:center!important;gap:9px!important;padding:18px 12px!important}.site-footer .footer-bottom .footer-credit{position:static!important;transform:none!important}}
